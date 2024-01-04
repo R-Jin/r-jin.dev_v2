@@ -1,13 +1,8 @@
-import type { Metadata } from "next";
 import { inter, merriweather } from "@/ui/fonts";
 import "@/ui/globals.css";
 
 import Header from "@/ui/components/header/Header";
-
-export const metadata: Metadata = {
-  title: "R-Jin.dev",
-  description: "I am a computer science student based in Gothenburg, Sweden.",
-};
+import Providers from "@/ui/components/Providers";
 
 export default function RootLayout({
   children,
@@ -20,9 +15,11 @@ export default function RootLayout({
       className={`${merriweather.variable} ${inter.variable} antialiased`}
     >
       <body>
-        <Header />
-        {children}
-        {/* footer */}
+        <Providers>
+          <Header />
+          <main className="bg-background">{children}</main>
+          {/* footer */}
+        </Providers>
       </body>
     </html>
   );
