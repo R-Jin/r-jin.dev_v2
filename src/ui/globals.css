@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.light {
+  /* Common colors */
+  --color-foreground: 51, 46, 60;
+  --color-background: 245, 243, 245;
+  --color-accent: 100, 121, 167;
+
+  /* Darkmode toggle button */
+  --color-darkmode-toggle-bg: 218, 222, 233;
+  --color-darkmode-toggle-border: 155, 187, 255;
+}
+
+.dark {
+  /* Common colors */
+  --color-foreground: 169, 177, 214;
+  --color-background: 26, 27, 38;
+  --color-accent: 110, 133, 183;
+
+  /* Darkmode toggle button */
+  --color-darkmode-toggle-bg: 43, 49, 67;
+  --color-darkmode-toggle-border: 110, 133, 183;
+}

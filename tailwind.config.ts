@@ -17,6 +17,13 @@ const config: Config = {
         serif: ["var(--font-merriweather)"],
         sans: ["var(--font-inter)"],
       },
+      colors: {
+        foreground: "rgba(var(--color-foreground))",
+        background: "rgba(var(--color-background))",
+        accent: "rgba(var(--color-accent))",
+        "darkmode-toggle-bg": "rgba(var(--color-darkmode-toggle-bg))",
+        "darkmode-toggle-border": "rgba(var(--color-darkmode-toggle-border))",
+      },
     },
   },
   plugins: [],
