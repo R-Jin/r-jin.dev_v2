@@ -8,7 +8,7 @@ export default function Header() {
         <NavLinks />
         <DarkModeToggle />
       </div>
-      <hr />
+      <hr className="border-foreground" />
     </header>
   );
 }
