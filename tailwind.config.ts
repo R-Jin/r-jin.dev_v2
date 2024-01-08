@@ -24,6 +24,10 @@ const config: Config = {
         "darkmode-toggle-bg": "rgba(var(--color-darkmode-toggle-bg))",
         "darkmode-toggle-border": "rgba(var(--color-darkmode-toggle-border))",
       },
+      screens: {
+        '3xl': '1920px',
+        '4xl': '4096px',
+      }, 
     },
   },
   plugins: [],
