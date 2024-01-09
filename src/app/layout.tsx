@@ -22,8 +22,7 @@ export default function RootLayout({
         <Providers>
           <div className="bg-background transition-colors duration-200 ease-linear">
             <Header />
-            <AnimatePresence>{children}</AnimatePresence>
-            {/* footer */}
+            <Footer />
           </div>
         </Providers>
       </body>
