@@ -22,6 +22,7 @@ export default function NavLinks() {
       const nav = document.querySelector('nav');
       if (activeLink && nav) {
         setActiveWidth(activeLink.getBoundingClientRect().width);
+        // Calculate the offset from the left side of the active links container 
         setOffsetLeft(activeLink.getBoundingClientRect().left - nav.getBoundingClientRect().left);
       }
     };
